@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
 
 const DemoComponent = () => {
-  // Define your demo array of objects
+ 
   const demoData = [
     { id: 1, text: 'Option 1' },
     { id: 2, text: 'Option 2' },
-    { id: 3, text: 'Option 3' },
-    { id: 4, text: 'Option 4' },
+    // { id: 3, text: 'Option 3' },
+    // { id: 4, text: 'Option 4' },
   ];
 
-  // Initialize state for the selected option and filtered data
+  
   const [selectedOption, setSelectedOption] = useState('All');
   const [filteredData, setFilteredData] = useState(demoData);
 
-  // Event handler to update the selected option
+ 
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
 
-    // Filter the data based on the selected option
     if (selectedValue === 'All') {
       setFilteredData(demoData);
     } else {
