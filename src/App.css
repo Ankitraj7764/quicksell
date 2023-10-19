@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+
+.body{
+  background: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+
+
+.kanban-column{
+
+  margin-left: 16px;
+
+ 
+ 
+}
+.kanban-board{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+
+  width:60%;
+  
+ 
+}
+.kanban-card{
+  background:white;
+ border-radius: 8px;
+
+box-shadow: 2px 2px 4px #dfdfdf;
+height: 20vh;
+width: 300px;
+margin-bottom: 20px;
+padding: 8px;
+padding-left: 20px;
+padding-top: 3px;
+
+
+
+}
+.kanban-cardP{
+  background:white;
+ border-radius: 8px;
+
+box-shadow: 2px 2px 4px #dfdfdf;
+height: 23vh;
+width: 225px;
+margin-bottom: 20px;
+padding: 8px;
+padding-left: 20px;
+padding-top: 3px;
+}
+.kanban-card-list{
+  
+}
+.kanban-cardP .cam{
+  color: #968686;
+  font-size: 14px;
+}
+.kanban-card .cam{
+  color: #968686;
+  font-size: 14px;
+}
+.kanban-card img{
+  height: 23px;
+  width: 23px;
+  margin-top: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.kanban-cardP img{
+  height: 23px;
+  width: 23px;
+  margin-top: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.kanban-card-header{
+  display: flex;
+  justify-content: space-between;
+}
+.kanban-card .kanban-card-title{
+  font-size: 12px;
+  font-weight: 600;
+
+}
+.kanban-card-list1{
+  display: flex;
+}
+.nameDiv{
+  margin-right: 12px;
+}
+.kanban-card-content-col{
+ height: 10px;
+ width: 10px;
+ border-radius: 50%;
+ background-color: #7a7676;
+ margin-top: 23px;
+}
+.kanban-column h5 span{
+  color: #817f7f;
+  font-weight: 500;
+  margin-left: 6px;
+  
+}
+.kanban-card-content{
+  display: flex;
+}
+.nameDivPri{
+
+}
+.header p{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 2px;
+  font-weight: 600;
+}
+.header {
+  margin: 12px;
+  margin-bottom: 0px;
+  background:white;
+  border-radius: 8px;
+ 
+ box-shadow: 2px 2px 4px #dfdfdf;
+ width: 12vw;
+ padding: 6px;
+}
+.nameDiv span{
+  font-weight: 500;
+}
+.nameDiv{
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nameDiv .count{
+  color: #838282;
+ 
+  font-weight: 400;
+  margin-left: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 720px) {
+  .kanban-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  }
+  .statusBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .kanban-column{
+    display: flex;
+    flex-direction: column;
+  }
+  .kanban-board{
+    display: flex;
+    flex-direction: column;
+  }
+  .header{
+    display: flex;
+    width: 50vw;
+   margin-left: 8px;
+  }
+  .kanban-card-list1{
+    display: flex;
+    flex-direction: column;
+  }
+  .kanban-column{
+ margin-left: 8px;
+  }
+  .statusl{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    
+  }
+  
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for tablets (portrait) and smaller screens */
+@media (max-width: 767px) {
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+@media (max-width: 480px) {
+  .kanban-card {
+    /* Add your card styles for mobile devices (portrait) here */
   }
 }
+
+
+
+
+
